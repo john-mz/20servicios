@@ -1,25 +1,83 @@
-  <nav class="navbar">
-    <div class="navbar-logo">MySite</div>
-    <ul class="navbar-links">
-      <li><a href="#" routerLink="/Dashboard">Home</a></li>
-      <li><a href="#" routerLink="/Productos">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="navbar-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+<!-- <nav class="navbar">
+  <div class="navbar-logo">MySite</div>
+  <div class="navbar-toggle" id="mobile-menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <ul class="navbar-links" id="navbar-links">
+    <li><a href="" routerLink="/Dashboard">Home</a></li>
+    <li><a href="" routerLink="/Productos">About</a></li>
+    <li><a href="">Services</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Componente1</a></li>
+    <li><a href="">Componente2</a></li>
+    <li><a href="">Componente3</a></li>
+    <li><a href="">Componente4</a></li>
+    <li><a href="">Componente5</a></li>
+    <li><a href="">Componente6</a></li>
+    <li><a href="">Componente7</a></li>
+    <li><a href="">Componente8</a></li>
+    <li><a href="">Componente9</a></li>
+    <li><a href="">Componente10</a></li>
+    <li><a href="">Componente11</a></li>
+    <li><a href="">Componente12</a></li>
+    <li><a href="">Componente13</a></li>
+    <li><a href="">Componente14</a></li>
+    <li><a href="">Componente15</a></li>
+    <li><a href="">Componente16</a></li>
+    <li><a href="">Componente17</a></li>
+    <li><a href="">Componente18</a></li>
+    <li><a href="">Componente19</a></li>
+    <li><a href="">Componente20</a></li>
+  </ul>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="/Dashboard">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="" routerLink="/Productos">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="">Componente 1</a></li>
+            <li><a class="dropdown-item" href="">Componente 2</a></li>
+            <li><a class="dropdown-item" href="">Componente 3</a></li>
+            <li><a class="dropdown-item" href="">Componente 4</a></li>
+            <li><a class="dropdown-item" href="">Componente 5</a></li>
+            <li><a class="dropdown-item" href="">Componente 6</a></li>
+            <li><a class="dropdown-item" href="">Componente 7</a></li>
+            <li><a class="dropdown-item" href="">Componente 8</a></li>
+            <li><a class="dropdown-item" href="">Componente 9</a></li>
+            <li><a class="dropdown-item" href="">Componente 10</a></li>
+            <li><a class="dropdown-item" href="">Componente 11</a></li>
+            <li><a class="dropdown-item" href="">Componente 12</a></li>
+            <li><a class="dropdown-item" href="">Componente 13</a></li>
+            <li><a class="dropdown-item" href="">Componente 14</a></li>
+            <li><a class="dropdown-item" href="">Componente 15</a></li>
+            <li><a class="dropdown-item" href="">Componente 16</a></li>
+            <li><a class="dropdown-item" href="">Componente 17</a></li>
+            <li><a class="dropdown-item" href="">Componente 18</a></li>
+            <li><a class="dropdown-item" href="">Componente 19</a></li>
+            <li><a class="dropdown-item" href="">Componente 20</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </nav>
-
-  <script>
-    // Mobile menu toggle
-    const menu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.navbar-links');
-
-    menu.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      menu.classList.toggle('active');
-    });
-  </script>
+  </div>
+</nav>
