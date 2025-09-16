@@ -1,0 +1,25 @@
+  <nav class="navbar">
+    <div class="navbar-logo">MySite</div>
+    <ul class="navbar-links">
+      <li><a href="#" routerLink="/Dashboard">Home</a></li>
+      <li><a href="#" routerLink="/Productos">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <script>
+    // Mobile menu toggle
+    const menu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelector('.navbar-links');
+
+    menu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+  </script>
