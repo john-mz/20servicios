@@ -1,0 +1,16 @@
+ <table>
+  <tr>
+    <th>id</th>
+    <th>titulo</th>
+    <th>descripcion</th>
+    <th>Estado</th>
+  </tr>
+@for (item of read; track $index) {
+<tr>
+    <th>{{item.id}}</th>
+    <th>{{item.titulo}}</th>
+    <th>{{item.descripcion}}</th>
+    <th>{{item.estado}}</th>
+</tr>
+}
+</table> 

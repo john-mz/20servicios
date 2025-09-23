@@ -4,20 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MathServicio {
-  contador = 0;
   puntaje = 0;
 
   generarNumerosAleatorios(): number {
     return Math.floor(Math.random() * (10 - 0 + 1)) + 0;;
   }
 
-  operarContador(estado: boolean): void {
+  operarContador(estado: boolean, num: number): number {
     if (estado) {
-      ++this.contador;
-      return;
+      return ++num;
     }
-    --this.contador;
-    return;
+    return --num;
   }
 
   operacionesMatematicasBasicas(num1: number, num2: number, operacion: String): number {
