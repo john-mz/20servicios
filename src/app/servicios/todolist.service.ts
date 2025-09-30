@@ -27,14 +27,21 @@ export class TodolistService {
     return this.tareas;
   }
 
-  edit(id: number, titulo: string, descripcion: string, estado: boolean): void {
-    for (let i = 0; i < this.tareas.length; i++) {
-      if (this.tareas[i].id == id) {
-        this.tareas[i].titulo = titulo;
-        this.tareas[i].descripcion = descripcion;
-        this.tareas[i].estado = estado;
+  edit(id: number): void {
+    let titulo = prompt("Ingresa el titulo de la tarea");
+    let descripcion = prompt("ingresa la descripcioin de la tarea");
+
+    if (titulo && descripcion) {
+      for (let i = 0; i < this.tareas.length; i++) {
+        if (this.tareas[i].id == id) {
+          this.tareas[i].titulo = titulo;
+          this.tareas[i].descripcion = descripcion;
+          this.tareas[i].estado = false;
+        }
       }
     }
+
+
   }
 
   delete(id: number): void {

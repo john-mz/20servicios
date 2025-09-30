@@ -1,16 +1,26 @@
- <table>
-  <tr>
-    <th>id</th>
-    <th>titulo</th>
-    <th>descripcion</th>
-    <th>Estado</th>
-  </tr>
-@for (item of read; track $index) {
-<tr>
-    <th>{{item.id}}</th>
-    <th>{{item.titulo}}</th>
-    <th>{{item.descripcion}}</th>
-    <th>{{item.estado}}</th>
-</tr>
-}
-</table> 
+<table class="table table-striped table-bordered table-hover align-middle mt-4">
+  <thead class="table-dark">
+    <button class="btn btn-primary" (click)="create()">Agregar</button>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Estado</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of read; track $index) {
+      <tr>
+        <td>{{item.id}}</td>
+        <td>{{item.titulo}}</td>
+        <td>{{item.descripcion}}</td>
+        <td>Pendiente</td>
+        <td>
+          <button class="btn btn-success btn-sm me-2" (click)="delete(item.id)">Completar</button>
+          <button class="btn btn-warning btn-sm" (click)="edit(item.id)">Editar</button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

@@ -18,16 +18,20 @@ interface Tarea{
 export class Componente3 {
   constructor(private TodolistService: TodolistService){}
 
-  create(titulo: string, descripcion: string, estado: boolean): void{
-    this.TodolistService.tareas.push({id: this.TodolistService.tareas[-1].id, titulo: titulo, descripcion: descripcion, estado: estado});
+  create(): void{
+    let titulo = prompt("Ingresa el titulo");
+    let descripcion = prompt("Ingresa la descripcion");
+    if (titulo && descripcion){
+      this.TodolistService.tareas.push({id: this.TodolistService.tareas[this.TodolistService.tareas.length - 1].id, titulo: titulo, descripcion: descripcion, estado: false});
+    }
   }
 
   get read(): Tarea[]{
     return this.TodolistService.read();
   }
 
-  edit(id: number, titulo: string, descripcion: string, estado: boolean): void {
-    this.TodolistService.edit(id, titulo, descripcion, estado);
+  edit(id: number): void {
+    this.TodolistService.edit(id);
   }
 
   delete(id: number): void {
