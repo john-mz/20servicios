@@ -7,6 +7,9 @@ import { Componente3 } from './modulos/componente3/componente3';
 import { Componente5 } from './modulos/componente5/componente5';
 import { Componente6 } from './modulos/componente6/componente6';
 import { Componente7 } from './modulos/componente7/componente7';
+import { Componente8 } from './modulos/componente8/componente8';
+import { Componente9 } from './modulos/componente9/componente9';
+import { Componente10 } from './modulos/componente10/componente10';
 
 export const routes: Routes = [
     {path: "Dashboard", component: Dashboard},
@@ -16,5 +19,8 @@ export const routes: Routes = [
     {path: "Componente3", component: Componente3},
     {path: "Componente5", component: Componente5},
     {path: "Componente6", component: Componente6},
-    {path: "Componente7", component: Componente7}
+    {path: "Componente7", component: Componente7},
+    {path: "Componente8", component: Componente8},
+    {path: "Componente9", component: Componente9},
+    {path: "Componente10", component: Componente10}
 ];

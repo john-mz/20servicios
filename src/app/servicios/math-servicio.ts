@@ -4,7 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MathServicio {
-  puntaje = 0;
 
   generarNumerosAleatorios(): number {
     return Math.floor(Math.random() * (10 - 0 + 1)) + 0;;
@@ -31,14 +30,11 @@ export class MathServicio {
 
   //incrementar, 5
   //decrementar, 5
-  puntuacion(accion: string, valor: number): void {
-    if (this.puntaje <= 0) return;
-
+  puntuacion(accion: string, valor: number): number {
     if (accion == "incrementar") {
-      this.puntaje += valor;
+      return valor;
     }
-
-    this.puntaje -= valor;
+    return -valor;
   }
 
   generateSecurePassword(length = 16): string {

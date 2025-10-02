@@ -1,0 +1,11 @@
+<button (click)="generateSecurePassword()">GENERAR CLAVE</button>
+@if (res != "") {
+    <h2>Su clave es: {{res}}</h2>
+}
+
+<p>Ingrese su clave actual para verificar si es segura</p>
+<input type="text" [(ngModel)]="claveGenerada">
+<button (click)="isPasswordSecure()">Es mi clave segura?</button>
+@if (esSeguraClave) {
+    <p>{{esSeguraClave}}</p>
+}
