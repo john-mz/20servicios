@@ -10,6 +10,7 @@ import { Componente7 } from './modulos/componente7/componente7';
 import { Componente8 } from './modulos/componente8/componente8';
 import { Componente9 } from './modulos/componente9/componente9';
 import { Componente10 } from './modulos/componente10/componente10';
+import { Componente11 } from './modulos/componente11/componente11';
 
 export const routes: Routes = [
     {path: "Dashboard", component: Dashboard},
@@ -22,5 +23,6 @@ export const routes: Routes = [
     {path: "Componente7", component: Componente7},
     {path: "Componente8", component: Componente8},
     {path: "Componente9", component: Componente9},
-    {path: "Componente10", component: Componente10}
+    {path: "Componente10", component: Componente10},
+    {path: "Componente11", component: Componente11}
 ];

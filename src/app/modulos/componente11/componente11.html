@@ -1,0 +1,19 @@
+<h1>peliculas</h1>
+@for (item of peliculas; track item.id) {
+    <p>{{item.id}}</p>
+    <p>{{item.nombre}}</p>
+    <img src="{{item.urlImagen}}" class="img-fluid" alt="" srcset="">
+    <button class="btn" (click)="modificarEstadoPeliculas(item.id)" [ngClass]="item.isFavorite ? 'btn-danger' : 'btn-outline-danger'">
+        {{item.isFavorite ? 'añadir a favoritos' : 'eliminar de favoritos'}}
+    </button>
+    <hr>
+}
+
+<h1>libros</h1>
+@for (item of libros; track item.id) {
+    <p>{{item.id}}</p>
+    <p>{{item.nombre}}</p>
+    <p>{{item.autor}}</p>
+    <img src="{{item.urlImagen}}" alt="" srcset="">
+    <p>{{item.isFavorite}}</p>
+}
